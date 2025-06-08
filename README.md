@@ -1,38 +1,87 @@
-# sv
+# A93N7 - Hyperautomation Landing Page
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+An unconventional, impressionist-inspired landing page showcasing the convergence of Agentic AI and RPA in hyperautomation. The brand name A93N7 visually transforms into AGENT, representing the future of intelligent automation.
 
-## Creating a project
+## 🎨 Design Philosophy
 
-If you're seeing this, you've probably already done this step. Congrats!
+- **Grayscale Monochromatic**: Clean, modern aesthetic using shades of gray
+- **Impressionist-Inspired**: Floating particles, soft blurs, and artistic asymmetry
+- **Playful & Creative**: Interactive elements with hover effects and animations
+- **Bold Branding**: A93N7 ↔ AGENT visual transformation
+
+## 🚀 Features
+
+- **Dynamic Typography**: Animated transformation between A93N7 and AGENT
+- **Particle Background**: Floating elements creating depth and movement
+- **Asymmetrical Cards**: Three core concepts with unique animations
+  - Agentic AI: Self-healing systems
+  - Process Symphony: Orchestrated workflows
+  - Flow State: Seamless automation
+- **Interactive Formula**: RPA × AI = ∞ (animated infinity symbol)
+- **Responsive Design**: Optimized for all screen sizes
+
+## 🛠️ Tech Stack
+
+- **Framework**: SvelteKit with Svelte 5
+- **Styling**: Tailwind CSS v4
+- **Language**: TypeScript
+- **Package Manager**: Bun
+- **Build Tool**: Vite
+
+## 📦 Installation
 
 ```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+# Install dependencies
+bun install
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## 🏃‍♂️ Development
 
 ```bash
-npm run dev
+# Start development server
+bun run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# Start dev server and open browser
+bun run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
+## 🏗️ Building
 
 ```bash
-npm run build
+# Build for production
+bun run build
+
+# Preview production build
+bun run preview
 ```
 
-You can preview the production build with `npm run preview`.
+## 🧪 Testing
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+# Run all tests
+bun run test
+
+# Run unit tests only
+bun run test:unit
+
+# Run E2E tests only
+bun run test:e2e
+```
+
+## 📝 Code Quality
+
+```bash
+# Type checking
+bun run check
+
+# Linting
+bun run lint
+```
+
+## 🌐 Deployment
+
+The project uses `@sveltejs/adapter-auto` to automatically detect and configure for your deployment environment. You may need to install a specific [adapter](https://svelte.dev/docs/kit/adapters) for your target platform.
+
+## 📄 License
+
+This project showcases the A93N7 brand and hyperautomation concepts.

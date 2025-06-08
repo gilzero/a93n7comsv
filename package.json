@@ -14,9 +14,10 @@
 		"test:e2e": "playwright test",
 		"test": "npm run test:e2e && npm run test:unit -- --run",
 		"test:unit": "vitest",
-		"deploy": "npm run build && wrangler pages deploy",
-		"deploy:preview": "npm run build && wrangler pages deploy --branch=preview",
-		"cf:dev": "wrangler pages dev"
+		"deploy": "bun run build && wrangler pages deploy --commit-dirty=true",
+		"deploy:preview": "bun run build && wrangler pages deploy --commit-dirty=true --branch=preview",
+		"deploy:create": "wrangler pages project create a93n7-landing",
+		"cf:dev": "wrangler pages dev .svelte-kit/cloudflare --port 3000"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.2.5",

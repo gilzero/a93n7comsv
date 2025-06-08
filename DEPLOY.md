@@ -27,15 +27,19 @@ The project is configured to use Cloudflare Workers via:
 Deploy using Cloudflare Pages for automatic deployments:
 
 ```bash
-# First-time setup
-bun run build
-wrangler pages project create a93n7-landing
+# First-time setup (only needed once)
+bun run deploy:create
 
 # Deploy to production
 bun run deploy
 
 # Deploy to preview environment
 bun run deploy:preview
+```
+
+Note: If you haven't logged in to Cloudflare yet, run:
+```bash
+wrangler login
 ```
 
 ### 2. Direct Workers Deployment

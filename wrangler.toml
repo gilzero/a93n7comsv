@@ -1,0 +1,40 @@
+name = "a93n7-landing"
+main = ".svelte-kit/cloudflare/index.js"
+compatibility_date = "2024-06-08"
+
+# The route pattern for your site
+# Update this to match your domain
+# route = { pattern = "a93n7.com/*", zone_name = "a93n7.com" }
+
+# Uncomment and configure if using a custom domain
+# routes = [
+#   { pattern = "a93n7.com", custom_domain = true },
+#   { pattern = "www.a93n7.com", custom_domain = true }
+# ]
+
+# Environment variables (if needed)
+# [vars]
+# MY_VARIABLE = "production_value"
+
+# Binding examples (uncomment if needed)
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+
+# Development settings
+[env.preview]
+name = "a93n7-landing-preview"
+# vars = { MY_VARIABLE = "preview_value" }
+
+[env.staging]
+name = "a93n7-landing-staging"
+# vars = { MY_VARIABLE = "staging_value" }

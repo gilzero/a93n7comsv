@@ -80,8 +80,29 @@ bun run lint
 
 ## 🌐 Deployment
 
-The project uses `@sveltejs/adapter-auto` to automatically detect and configure for your deployment environment. You may need to install a specific [adapter](https://svelte.dev/docs/kit/adapters) for your target platform.
+### Cloudflare Workers/Pages
+
+This project is configured for deployment to Cloudflare Workers/Pages:
+
+```bash
+# Deploy to production
+bun run deploy
+
+# Deploy to preview environment
+bun run deploy:preview
+
+# Local development with Cloudflare runtime
+bun run cf:dev
+```
+
+See [DEPLOY.md](./DEPLOY.md) for detailed deployment instructions.
+
+### Other Platforms
+
+To deploy to other platforms, install the appropriate [adapter](https://svelte.dev/docs/kit/adapters).
 
 ## 📄 License
 
 This project showcases the A93N7 brand and hyperautomation concepts.
+
+update_20250608_163419_UTC+0800_elephant

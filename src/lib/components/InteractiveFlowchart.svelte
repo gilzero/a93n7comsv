@@ -88,8 +88,8 @@
 </script>
 
 <div class="interactive-flowchart-container bg-gray-100 p-8 rounded-lg shadow-md" role="figure" aria-labelledby="flowchart-title">
-	<h2 id="flowchart-title" class="sr-only">Interactive Process Flowchart</h2> {/* Screen-reader only title */}
-	<div class="flex flex-col items-center"> {/* Removed space-y-8 to control spacing with connectors */}
+	<h2 id="flowchart-title" class="sr-only">Interactive Process Flowchart</h2>
+	<div class="flex flex-col items-center">
 
 		<!-- Start Node (ID 0) -->
 		<div
@@ -126,7 +126,7 @@
 		<div class="connector-line h-10 w-1 my-1" class:bg-yellow-500={isConnectorActive(1,2) || isConnectorActive(1,3)} class:bg-gray-400={!(isConnectorActive(1,2) || isConnectorActive(1,3))}></div>
 
 		<!-- Branching for RPA Actions -->
-		<div class="flex space-x-16 relative my-1"> {/* Added relative and my-1 */}
+		<div class="flex space-x-16 relative my-1">
 			<!-- Branch A Path -->
 			<div class="flex flex-col items-center">
 				<!-- RPA Action 1 (Branch A - ID 2) -->
@@ -164,7 +164,7 @@
 
 		<!-- Converging Connectors to AI Decision 2 (ID 4) -->
 		<!-- This part remains a simplified placeholder. Proper SVG connectors would be needed for a polished look. -->
-		<div class="flex justify-center items-center h-10 w-full my-1 relative"> {/* Added relative and my-1 */}
+		<div class="flex justify-center items-center h-10 w-full my-1 relative">
 			<div class="absolute top-0 left-1/2 transform -translate-x-1/2">
 				<!-- Connector from RPA1A (2) to AI2 (4) -->
 				<div

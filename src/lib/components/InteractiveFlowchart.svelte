@@ -99,7 +99,7 @@
 			class:shadow-xl={isNodeActive(0)}
 			class:border-gray-300={!isNodeActive(0)}
 		>
-			<div class="icon-container h-8 w-8 mx-auto mb-2" class:text-yellow-500={isNodeActive(0)} class:text-gray-500={!isNodeActive(0)} aria-hidden="true">
+			<div class="icon-container h-8 w-8 mx-auto mb-2 transition-colors duration-300 ease-in-out" class:text-yellow-500={isNodeActive(0)} class:text-gray-500={!isNodeActive(0)} aria-hidden="true">
 				{@html icons[nodes[0].icon]}
 			</div>
 			<h3 class="text-md font-semibold text-gray-800">{nodes[0].name}</h3>
@@ -116,7 +116,7 @@
 			class:shadow-xl={isNodeActive(1)}
 			class:border-purple-300={!isNodeActive(1)}
 		>
-			<div class="icon-container h-8 w-8 mx-auto mb-2" class:text-yellow-500={isNodeActive(1)} class:text-purple-500={!isNodeActive(1)} aria-hidden="true">
+			<div class="icon-container h-8 w-8 mx-auto mb-2 transition-colors duration-300 ease-in-out" class:text-yellow-500={isNodeActive(1)} class:text-purple-500={!isNodeActive(1)} aria-hidden="true">
 				{@html icons[nodes[1].icon]}
 			</div>
 			<h3 class="text-md font-semibold text-purple-800">{nodes[1].name}</h3>
@@ -137,7 +137,7 @@
 					class:shadow-xl={isNodeActive(2)}
 					class:border-blue-300={!isNodeActive(2)}
 				>
-					<div class="icon-container h-8 w-8 mx-auto mb-2" class:text-yellow-500={isNodeActive(2)} class:text-blue-500={!isNodeActive(2)} aria-hidden="true">
+					<div class="icon-container h-8 w-8 mx-auto mb-2 transition-colors duration-300 ease-in-out" class:text-yellow-500={isNodeActive(2)} class:text-blue-500={!isNodeActive(2)} aria-hidden="true">
 						{@html icons[nodes[2].icon]}
 					</div>
 					<h3 class="text-md font-semibold text-blue-800">{nodes[2].name}</h3>
@@ -154,7 +154,7 @@
 					class:shadow-xl={isNodeActive(3)}
 					class:border-blue-300={!isNodeActive(3)}
 				>
-					<div class="icon-container h-8 w-8 mx-auto mb-2" class:text-yellow-500={isNodeActive(3)} class:text-blue-500={!isNodeActive(3)} aria-hidden="true">
+					<div class="icon-container h-8 w-8 mx-auto mb-2 transition-colors duration-300 ease-in-out" class:text-yellow-500={isNodeActive(3)} class:text-blue-500={!isNodeActive(3)} aria-hidden="true">
 						{@html icons[nodes[3].icon]}
 					</div>
 					<h3 class="text-md font-semibold text-blue-800">{nodes[3].name}</h3>
@@ -194,7 +194,7 @@
 			class:shadow-xl={isNodeActive(4)}
 			class:border-purple-300={!isNodeActive(4)}
 		>
-			<div class="icon-container h-8 w-8 mx-auto mb-2" class:text-yellow-500={isNodeActive(4)} class:text-purple-500={!isNodeActive(4)} aria-hidden="true">
+			<div class="icon-container h-8 w-8 mx-auto mb-2 transition-colors duration-300 ease-in-out" class:text-yellow-500={isNodeActive(4)} class:text-purple-500={!isNodeActive(4)} aria-hidden="true">
 				{@html icons[nodes[4].icon]}
 			</div>
 			<h3 class="text-md font-semibold text-purple-800">{nodes[4].name}</h3>
@@ -211,7 +211,7 @@
 			class:shadow-xl={isNodeActive(5)}
 			class:border-blue-300={!isNodeActive(5)}
 		>
-			<div class="icon-container h-8 w-8 mx-auto mb-2" class:text-yellow-500={isNodeActive(5)} class:text-blue-500={!isNodeActive(5)} aria-hidden="true">
+			<div class="icon-container h-8 w-8 mx-auto mb-2 transition-colors duration-300 ease-in-out" class:text-yellow-500={isNodeActive(5)} class:text-blue-500={!isNodeActive(5)} aria-hidden="true">
 				{@html icons[nodes[5].icon]}
 			</div>
 			<h3 class="text-md font-semibold text-blue-800">{nodes[5].name}</h3>
@@ -228,7 +228,7 @@
 			class:shadow-xl={isNodeActive(6)}
 			class:border-green-300={!isNodeActive(6)}
 		>
-			<div class="icon-container h-8 w-8 mx-auto mb-2" class:text-yellow-500={isNodeActive(6)} class:text-green-500={!isNodeActive(6)} aria-hidden="true">
+			<div class="icon-container h-8 w-8 mx-auto mb-2 transition-colors duration-300 ease-in-out" class:text-yellow-500={isNodeActive(6)} class:text-green-500={!isNodeActive(6)} aria-hidden="true">
 				{@html icons[nodes[6].icon]}
 			</div>
 			<h3 class="text-md font-semibold text-green-800">{nodes[6].name}</h3>
@@ -257,18 +257,12 @@
 		transform: translateY(-5px);
 	} */
 
-	.icon-container > svg { /* Ensure direct SVG child is targeted */
-		width: 100%;
-		height: 100%;
-		transition: color 0.3s ease-in-out;
-	}
+	/* Removed .icon-container > svg rule as it was reported unused and functionality moved to Tailwind */
 
 	.connector-line {
 		transition: background-color 0.3s ease-in-out;
 	}
 	/* Converging connector styling is very basic and needs significant improvement, ideally with SVG.
 	   The current attempt with rotated divs is a placeholder. */
-	.connector-converge-arm {
-		transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-	}
+	/* Removed .connector-converge-arm rule as it was unused */
 </style>

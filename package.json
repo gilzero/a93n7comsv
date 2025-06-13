@@ -14,8 +14,8 @@
 		"test:e2e": "playwright test",
 		"test": "npm run test:e2e && npm run test:unit -- --run",
 		"test:unit": "vitest",
-		"deploy": "bun run build && wrangler pages deploy --commit-dirty=true",
-		"deploy:preview": "bun run build && wrangler pages deploy --commit-dirty=true --branch=preview",
+		"deploy": "bun run build && npx wrangler@3.21.0 pages deploy .svelte-kit/cloudflare --commit-dirty=true",
+		"deploy:preview": "bun run build && npx wrangler@3.21.0 pages deploy .svelte-kit/cloudflare --commit-dirty=true --branch=preview",
 		"deploy:create": "wrangler pages project create a93n7-landing",
 		"cf:dev": "wrangler pages dev .svelte-kit/cloudflare --port 3000"
 	},

@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import { tweened } from 'svelte/motion';
 	import { cubicOut } from 'svelte/easing';
+	import InteractiveFlowchart from '$lib/components/InteractiveFlowchart.svelte';
 
 	let mounted = $state(false);
 	let heroText = $state('A93N7');
@@ -259,6 +260,16 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<!-- Interactive Flowchart Section -->
+	<section class="relative py-24 px-6 bg-white"> {/* Changed to bg-white for contrast with flowchart bg-gray-100 */}
+		<div class="container mx-auto max-w-4xl text-center">
+			<h2 class="text-4xl md:text-5xl font-bold mb-16 text-gray-800"> {/* Increased mb for spacing */}
+				A93N7 in Action: Visualizing the Flow
+			</h2>
+			<InteractiveFlowchart />
 		</div>
 	</section>
 
